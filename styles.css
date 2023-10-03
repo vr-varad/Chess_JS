@@ -1,0 +1,61 @@
+body{
+  background: rgb(232,165,224);
+  background: linear-gradient(160deg, rgba(232,165,224,1) 26%, rgba(126,210,227,1) 73%);
+}
+
+#gameboard {
+  height: 320px;
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  position: relative;
+  z-index: -9;
+}
+
+path {
+  position: relative;
+  z-index: -10;
+}
+
+.piece {
+  position: relative;
+  z-index: 9;
+}
+.kala {
+  background-color: rgb(190, 159, 57);
+}
+.gora {
+  background-color: rgb(66, 57, 27);
+}
+
+.white {
+  fill: white;
+}
+.black {
+  fill: black;
+}
+.chessboard{
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
